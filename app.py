@@ -12,6 +12,10 @@ def hello_world():
 def about():
     return render_template("about.html")
     
+@app.route("/new_page")
+def new_page():
+    return render_template("new_page.html")
+    
 def todays_date():
     today = date.today()
     str_date = today.strftime("%B %d %Y")
